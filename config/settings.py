@@ -167,7 +167,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Portfólio Django",
     "welcome_sign": "Esse painel permite gerenciamento de usuários, autenticação JWT, visualização de API com Swagger e muito mais.",
     "copyright": "Eduardo Prestes ©",
-    "search_model": ["users.CustomUser"],
+    "search_model": ["users.User"],
 
     "topmenu_links": [
         {"name": "Documentação", "url": "/api/docs/", "external": True},
