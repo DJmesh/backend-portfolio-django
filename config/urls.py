@@ -3,7 +3,6 @@ from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from drf_spectacular.utils import extend_schema_view, extend_schema
-from config.views import CustomLoginView
 
 @extend_schema_view(
     post=extend_schema(tags=['Autenticação']),
@@ -18,7 +17,6 @@ class CustomTokenRefreshView(TokenRefreshView):
     pass
 
 urlpatterns = [
-    path('admin/login/', CustomLoginView.as_view(), name='login'),
     path('admin/', admin.site.urls),
 
     path('schema/', SpectacularAPIView.as_view(), name='schema'),
