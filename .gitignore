@@ -11,7 +11,7 @@ venv/
 /media
 /staticfiles
 db.sqlite3
-migrations/
+
 
 # VSCode
 .vscode/
